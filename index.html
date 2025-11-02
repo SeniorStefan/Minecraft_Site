@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Приватный Minecraft сервер</title>
+  <meta name="description" content="Приватный Minecraft сервер — проект для друзей. Бесплатно, обновления, дружелюбное комьюнити." />
+  <style>
+    :root{
+      --bg:#0d1117;
+      --card:#161b22;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --radius:14px;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body{
+      margin:0;
+      background: var(--bg);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      display:flex;
+      justify-content:center;
+      padding:32px 16px;
+    }
+
+    .wrap{width:100%;max-width:1100px;}
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:20px;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .brand{display:flex;align-items:center;gap:12px;}
+    .logo{
+      width:56px;height:56px;
+      background:var(--accent);
+      border-radius:12px;
+      display:flex;align-items:center;justify-content:center;
+      color:#022;font-weight:700;font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    p{margin:0}
+    .muted{color:var(--muted)}
+    .tag{background:#1e242c;padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);}
+
+    main{
+      display:grid;
+      grid-template-columns:1fr 340px;
+      gap:16px;
+      align-items:start;
+    }
+    @media(max-width:900px){main{grid-template-columns:1fr}}
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .dynmap-wrap{
+      border-radius:12px;
+      overflow:hidden;
+      height:520px;
+      background:#000;
+    }
+
+    iframe{width:100%;height:100%;border:0;display:block;}
+
+    .btn{
+      background:var(--accent);
+      color:#022;
+      font-weight:600;
+      border:none;
+      border-radius:10px;
+      padding:8px 14px;
+      margin-top: 10px;
+      text-decoration:none;
+      cursor:pointer;
+      display:inline-block;
+    }
+
+    ul{margin:8px 0 0 18px}
+    li{margin-bottom:4px}
+
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MC</div>
+        <div>
+          <h1>Приватный Minecraft сервер</h1>
+          <p class="muted">Проект друзей, теперь открыт для новых игроков</p>
+        </div>
+      </div>
+      <div class="muted">IP: <strong>195.133.194.246:25565</strong></div>
+    </header>
+
+    <main>
+      <div>
+        <div class="card">
+          <h3>Dynmap — карта сервера</h3>
+          <p class="muted">Живая онлайн-карта мира. Можно двигать, приближать, смотреть постройки игроков.</p>
+          <div style="margin:8px 0;">
+            <a class="btn" href="http://195.133.194.246:8123/" target="_blank" rel="noopener">Открыть Dynmap</a>
+          </div>
+          <div class="dynmap-wrap">
+            <iframe src="http://195.133.194.246:8123/" title="Dynmap"></iframe>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>О сервере</h3>
+          <p class="muted">
+            Сервер приватный, создан для друзей и развивается для большего количества игроков. 
+            Вход бесплатный, без доната. Мы строим, экспериментируем и добавляем новые обновления.
+          </p>
+
+          <h4>Как получить проходку</h4>
+          <ul>
+            <li>Напиши в <a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">наш Telegram-чат</a></li>
+            <li>Укажи свой <strong>ник в игре</strong></li>
+            <li>Пришли <strong>фото своих построек</strong> (можно несколько)</li>
+          </ul>
+          <p class="muted">После этого админ проверит заявку и даст доступ.</p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Преимущества сервера</h3>
+          <ul>
+            <li>Бесплатный вход</li>
+            <li>Дружелюбное сообщество</li>
+            <li>Частые обновления и ивенты</li>
+            <li>Dynmap для просмотра мира</li>
+            <li>Приватные участки и защита построек</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Получить проходку</h3>
+          <p class="muted">Свяжись с нами в Telegram:</p>
+          <a class="btn" href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Открыть Telegram</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © Snr_Stefan — 2025
+    </footer>
+  </div>
+</body>
+</html>
